@@ -85,11 +85,20 @@ p {
     display: block;
     border-radius: 100%;
     border: none;
-    margin: auto;
+    margin: auto; 
     background: hsl(150, 100%, 66%);
     position: relative;
     top: 49px;
     cursor: pointer;
+    box-shadow: 3px 2px 58px 0px rgba(82,255,168,0.75);
+    -webkit-box-shadow: 3px 2px 58px 0px rgba(82,255,168,0.75);
+    -moz-box-shadow: 3px 2px 58px 0px rgba(82,255,168,0.75);
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 .circlebutton img {
