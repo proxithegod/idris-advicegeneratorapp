@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    /* width: 100vw; */
+    background: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 445px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.toptext {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: light;
+    text-align: center;
+}
+
+h1 {
+    font-size: 15px;
+    color: hsl(150, 100%, 66%);
+}
+
+.js-advicenumber {
+    font-size: 13px;
+}
+
+p {
+    margin-top: 10px;
+    word-wrap: break-word;
+    color: hsl(193, 38%, 86%);
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+    display: none;
+    font-weight: light;
+}
+
+.mobiledivider {
+    display: none;
+}
+
+.desktopdivider {
+    margin-top: 20px;
+}
+
+.btn-container {
+    /* border: 1px solid black; */
+    /* display: flex; */
+    /* width: 60px;
+    height: 60px;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; */
+    /* background-color: hsl(150, 100%, 66%); */
+    
+    
+}
+
+.circlebutton {
+    height: 60px;
+    width: 60px;
+    display: block;
+    border-radius: 100%;
+    border: none;
+    margin: auto;
+    background: hsl(150, 100%, 66%);
+    position: relative;
+    top: 49px;
+    cursor: pointer;
+}
+
+.circlebutton img {
+    margin: auto;
+    justify-content: center;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:hover {
+    background: hsla(150, 100%, 66%, 0.336);
+} 
+
+@media only screen and (max-width: 500px) {
+    .maincontainer {
+        max-width: 300px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin: auto;
+    }
+}
