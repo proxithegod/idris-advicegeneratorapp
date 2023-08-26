@@ -1,6 +1,6 @@
-const adviceNumber = document.querySelector('.js-advicenumber');
+const adviceNumber = document.getElementById('js-advicenumber');
 const errorDisplay = document.querySelector('.error')
-const advice = document.querySelector('.advice');
+const advice = document.getElementById('advice');
 const btn = document.querySelector('.js-btn');
 
 const adviceUrl = 'https://api.adviceslip.com/advice';
@@ -28,3 +28,5 @@ async function adviceGenerator() {
 btn.addEventListener ('click', () => {
     adviceGenerator()
 })
+
+adviceGenerator()
